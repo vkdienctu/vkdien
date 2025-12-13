@@ -329,107 +329,130 @@
 <body class="bg-slate-900 text-slate-100">
 
 <!-- RESEARCH -->
-<section id="research" class="border-t border-slate-800 bg-slate-900/40">
-  <div class="max-w-6xl mx-auto px-6 py-12">
+    <section id="research" class="border-t border-slate-800 bg-slate-900/40 hidden">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 class="text-2xl font-semibold mb-6">Research</h2>
 
-    <h2 class="text-2xl font-semibold mb-6">Research</h2>
+        <div class="grid md:grid-cols-2 gap-5 text-xs sm:text-sm">
+          <!-- Card 1: Exciton Physics -->
+          <div class="soft-card border border-slate-800 rounded-2xl p-5 flex flex-col gap-3">
+            <div class="w-full h-100 sm:h-120 card-img bg-slate-900/70">
+              <img
+                src="img/light-mater.jpg"
+                alt="Illustration of excitons in 2D materials"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <h3 class="font-semibold text-indigo-200 mb-2">
+                Exciton Physics in 2D Materials
+              </h3>
+              <p class="text-slate-300 mb-2">
+                This work investigates how crystal-symmetry breaking in monolayer SnS and SnSe enables
+                robust valley-selective optical transitions. Using first-principles GW-BSE calculations,
+                the study reveals that different polarization states of light couple selectively to 
+                distinct electronic valleys, providing a controllable valley degree of freedom. 
+                The results identify tin chalcogenide monolayers as promising candidates for next-generation 
+                valleytronic devices where information can be encoded and manipulated through valley polarization.
+              </p>
+              <ul class="list-disc list-inside text-slate-300 space-y-1">
+                <li>
+                  Nguyen Thanh Tien, Pham Thi Bich Thao, Nguyen Thi Han, <strong>Vo Khuong Dien</strong>.
+                  <span class="italic">“Symmetry-driven valleytronics in single-layer tin chalcogenides SnS and SnSe.”</span>
+                  <strong>PRB</strong> 109, 155416 (2024).
+                  DOI:
+                  <a class="text-indigo-300 hover:text-indigo-200"
+                     href="https://doi.org/10.1103/PhysRevB.109.155416"
+                     target="_blank">
+                    10.1103/PhysRevB.109.155416
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-    <!-- GRID: 3 panels ALWAYS horizontal -->
-    <div class="grid grid-cols-3 gap-6 text-sm">
-
-      <!-- Card 1 -->
-      <div class="border border-slate-800 rounded-2xl p-5 flex flex-col gap-4 bg-slate-900/60">
-        <div class="w-full h-18 rounded-xl overflow-hidden bg-slate-800">
-          <img
-            src="img/light-mater.jpg"
-            alt="Exciton physics"
-            class="w-full h-full object-cover"
-          />
+          <!-- Card 2: Machine-Learning-Accelerated Thermoelectric Design -->
+          <div class="soft-card border border-slate-800 rounded-2xl p-5 flex flex-col gap-3">
+            <div class="w-full h-100 sm:h-120 card-img bg-slate-900/70">
+              <img
+                src="img/Machine learning.jpg"
+                alt="Machine-Learning-Accelerated Thermoelectric Design"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <h3 class="font-semibold text-emerald-200 mb-2">
+                Machine-Learning-Accelerated Thermoelectric Design
+              </h3>
+              <p class="text-slate-300 mb-2">
+                This research line uses first-principles calculations combined with machine-learning interatomic
+                potentials to explore the thermoelectric potential of low-dimensional materials. In monolayer
+                penta-InP<sub>5</sub>, we demonstrate that ultralow lattice thermal conductivity and favorable
+                electronic transport properties yield a high thermoelectric figure of merit (ZT) at room temperature,
+                making it promising for flexible and wearable applications.
+              </p>
+              <p class="text-slate-300 mb-2">
+                We further explore how electron–phonon coupling, phonon anharmonicity, and structural tuning
+                can be used to engineer κ<sub>L</sub> and ZT in 2D systems more broadly.
+              </p>
+              <ul class="list-disc list-inside text-slate-300 space-y-1">
+                <li>
+                  Nguyen Thanh Tien, Pham Thi Bich Thao, Duy Khanh Nguyen, Nhat Le Thanh, <strong>Vo Khuong Dien</strong>.
+                  <span class="italic">“Thermoelectric properties of penta-InP<sub>5</sub>: A first-principles and machine learning study.”</span>
+                  <strong>Journal of Applied Physics</strong> 137, 8 (2025).
+                  DOI:
+                  <a class="text-indigo-300 hover:text-indigo-200"
+                     href="https://doi.org/10.1063/5.0251741"
+                     target="_blank">
+                    10.1063/5.0251741
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div>
-          <h3 class="font-semibold text-indigo-300 mb-2">
-            Exciton Physics in 2D Materials
-          </h3>
-          <p class="text-slate-300 mb-2">
-            This work investigates how crystal-symmetry breaking in monolayer SnS and SnSe enables
-            robust valley-selective optical transitions. Using first-principles GW-BSE calculations,
-            the study reveals that different polarization states of light couple selectively to 
-            distinct electronic valleys, providing a controllable valley degree of freedom.
-          </p>
-          <ul class="list-disc list-inside text-slate-400 text-xs">
-            <li> Nguyen Thanh Tien, Pham Thi Bich Thao, Nguyen Thi Han, <strong>Vo Khuong Dien</strong>. 
-              <span class="italic">“Symmetry-driven valleytronics in single-layer tin chalcogenides SnS and SnSe.”
-              </span> 
-              <strong>PRB</strong> 109, 155416 (2024). DOI: <a class="text-indigo-300 hover:text-indigo-200" href="https://doi.org/10.1103/PhysRevB.109.155416" target="_blank"> 10.1103/PhysRevB.109.155416
-            </li>
-          </ul>
-        </div>
+          <!-- Card 3: Electron-Phonon interaction -->
+          <div class="soft-card border border-slate-800 rounded-2xl p-5 flex flex-col gap-3">
+            <div class="w-full h-100 sm:h-120 card-img bg-slate-900/70">
+              <img
+                src="img/Elctron-phonon_interact.png"
+                alt="Illustration of EPC in 2D materials"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <h3 class="font-semibold text-indigo-200 mb-2">
+                Tunable thermal transport via electron–phonon coupling
+              </h3>
+              <p class="text-slate-300 mb-2">
+              Using first-principles calculations combined with on-the-fly machine-learning force fields, 
+              this work demonstrates that electron–phonon coupling (EPC) can dominate heat transport in 
+              hole-doped monolayer penta-graphene. The intrinsic absence of out-of-plane mirror symmetry 
+              enables direct coupling between charge carriers and flexural (ZA) phonons, a mechanism that
+              is forbidden in graphene. When the Fermi level is tuned toward the Van Hove singularity, 
+              the enhanced electronic density of states strongly amplifies EPC, leading to a pronounced 
+              suppression of the lattice thermal conductivity by approximately 66% at room temperature 
+              and a weakened temperature dependence. This EPC-driven reduction of heat conduction results
+              in a more than twofold enhancement of the thermoelectric figure of merit, highlighting EPC 
+              as a key handle for engineering thermal and thermoelectric properties in low-symmetry two-dimensional materials.
+              </p>
+              <ul class="list-disc list-inside text-slate-300 space-y-1">
+                <li>
+                  Nguyen Thanh Tien, Pham Thi Bich Thao, Nguyen Thi Han, <strong>Vo Khuong Dien</strong>.
+                  <span class="italic">“Symmetry-driven valleytronics in single-layer tin chalcogenides SnS and SnSe.”</span>
+                  <strong>PRB</strong> 109, 155416 (2024).
+                  DOI:
+                  <a class="text-indigo-300 hover:text-indigo-200"
+                     href="https://doi.org/10.1103/PhysRevB.109.155416"
+                     target="_blank">
+                    10.1103/PhysRevB.109.155416
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
       </div>
-
-      <!-- Card 2 -->
-      <div class="border border-slate-800 rounded-2xl p-5 flex flex-col gap-4 bg-slate-900/60">
-        <div class="w-full h-48 rounded-xl overflow-hidden bg-slate-800">
-          <img
-            src="img/Machine learning.jpg"
-            alt="Machine learning thermoelectrics"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div>
-          <h3 class="font-semibold text-emerald-300 mb-2">
-            Machine-Learning-Accelerated Thermoelectric Design
-          </h3>
-          <p class="text-slate-300 mb-2">
-            This research combines first-principles calculations with machine-learning interatomic
-            potentials to explore thermoelectric performance in low-dimensional materials.
-            In monolayer penta-InP<sub>5</sub>, ultralow lattice thermal conductivity and favorable
-            electronic transport lead to a high room-temperature ZT.
-          </p>
-          <ul class="list-disc list-inside text-slate-400 text-xs">
-            <li>
-              Nguyen Thanh Tien, Pham Thi Bich Thao, Duy Khanh Nguyen, Nhat Le Thanh, <strong>Vo Khuong Dien</strong>.
-              <span class="italic">“Thermoelectric properties of penta-InP<sub>5</sub>: A first-principles and machine learning study.”
-              </span> 
-              <strong>Journal of Applied Physics</strong> 137, 8 (2025). DOI: <a class="text-indigo-300 hover:text-indigo-200" href="https://doi.org/10.1063/5.0251741" target="_blank"> 10.1063/5.0251741
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="border border-slate-800 rounded-2xl p-5 flex flex-col gap-4 bg-slate-900/60">
-        <div class="w-full h-48 rounded-xl overflow-hidden bg-slate-800">
-          <img
-            src="img/Elctron-phonon_interact.png"
-            alt="Electron–phonon coupling"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div>
-          <h3 class="font-semibold text-indigo-300 mb-2">
-            Tunable Thermal Transport via EPC
-          </h3>
-          <p class="text-slate-300 mb-2">
-            Using first-principles calculations combined with on-the-fly machine-learning force fields,
-            this work demonstrates that electron–phonon coupling (EPC) can dominate heat transport
-            in hole-doped monolayer penta-graphene.
-          </p>
-          <p class="text-slate-300 mb-2">
-            Enhanced EPC near the Van Hove singularity strongly suppresses lattice thermal conductivity
-            and more than doubles the thermoelectric figure of merit, identifying EPC as a powerful
-            tuning knob in low-symmetry 2D materials.
-          </p>
-          <ul class="list-disc list-inside text-slate-400 text-xs">
-            <li>
-              EPC-driven thermal engineering in low-symmetry 2D materials
-            </li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
 </body>
 </html>
@@ -744,6 +767,7 @@
   </script>
 </body>
 </html>
+
 
 
 

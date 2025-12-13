@@ -314,83 +314,111 @@
         </div>
       </div>
     </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN (đảm bảo grid hoạt động) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Research Section</title>
+</head>
+
+<body class="bg-slate-900 text-slate-100">
 
 <!-- RESEARCH -->
-<section id="research" class="border-t border-slate-800 bg-slate-900/40 hidden">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<section id="research" class="border-t border-slate-800 bg-slate-900/40">
+  <div class="max-w-6xl mx-auto px-6 py-12">
 
     <h2 class="text-2xl font-semibold mb-6">Research</h2>
 
-    <!-- GRID: vertical layout -->
-    <div class="grid grid-cols-1 gap-6 text-xs sm:text-sm">
+    <!-- GRID: 3 panels ALWAYS horizontal -->
+    <div class="grid grid-cols-3 gap-6 text-sm">
 
       <!-- Card 1 -->
-      <div class="soft-card border border-slate-800 rounded-2xl p-5 flex flex-col gap-4">
-        <div class="w-full h-100 sm:h-120 bg-slate-900/70 rounded-xl overflow-hidden">
-          <img src="img/light-mater.jpg"
-               alt="Excitons in 2D materials"
-               class="w-full h-full object-cover" />
+      <div class="border border-slate-800 rounded-2xl p-5 flex flex-col gap-4 bg-slate-900/60">
+        <div class="w-full h-18 rounded-xl overflow-hidden bg-slate-800">
+          <img
+            src="img/light-mater.jpg"
+            alt="Exciton physics"
+            class="w-full h-full object-cover"
+          />
         </div>
         <div>
-          <h3 class="font-semibold text-indigo-200 mb-2">
+          <h3 class="font-semibold text-indigo-300 mb-2">
             Exciton Physics in 2D Materials
           </h3>
           <p class="text-slate-300 mb-2">
             This work investigates how crystal-symmetry breaking in monolayer SnS and SnSe enables
-            valley-selective optical transitions using GW-BSE calculations.
+            robust valley-selective optical transitions. Using first-principles GW-BSE calculations,
+            the study reveals that different polarization states of light couple selectively to 
+            distinct electronic valleys, providing a controllable valley degree of freedom.
           </p>
-          <ul class="list-disc list-inside text-slate-300">
+          <ul class="list-disc list-inside text-slate-400 text-xs">
             <li>
               Nguyen Thanh Tien et al.,
-              <strong>PRB</strong> 109, 155416 (2024).
+              <em>PRB</em> 109, 155416 (2024)
             </li>
           </ul>
         </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="soft-card border border-slate-800 rounded-2xl p-5 flex flex-col gap-4">
-        <div class="w-full h-100 sm:h-120 bg-slate-900/70 rounded-xl overflow-hidden">
-          <img src="img/Machine learning.jpg"
-               alt="ML thermoelectrics"
-               class="w-full h-full object-cover" />
+      <div class="border border-slate-800 rounded-2xl p-5 flex flex-col gap-4 bg-slate-900/60">
+        <div class="w-full h-48 rounded-xl overflow-hidden bg-slate-800">
+          <img
+            src="img/Machine learning.jpg"
+            alt="Machine learning thermoelectrics"
+            class="w-full h-full object-cover"
+          />
         </div>
         <div>
-          <h3 class="font-semibold text-emerald-200 mb-2">
+          <h3 class="font-semibold text-emerald-300 mb-2">
             Machine-Learning-Accelerated Thermoelectric Design
           </h3>
           <p class="text-slate-300 mb-2">
-            First-principles calculations combined with ML force fields reveal ultralow lattice
-            thermal conductivity and high ZT in penta-InP₅.
+            This research combines first-principles calculations with machine-learning interatomic
+            potentials to explore thermoelectric performance in low-dimensional materials.
+            In monolayer penta-InP<sub>5</sub>, ultralow lattice thermal conductivity and favorable
+            electronic transport lead to a high room-temperature ZT.
           </p>
-          <ul class="list-disc list-inside text-slate-300">
+          <ul class="list-disc list-inside text-slate-400 text-xs">
             <li>
               Nguyen Thanh Tien et al.,
-              <strong>JAP</strong> 137, 8 (2025).
+              <em>J. Appl. Phys.</em> 137 (2025)
             </li>
           </ul>
         </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="soft-card border border-slate-800 rounded-2xl p-5 flex flex-col gap-4">
-        <div class="w-full h-100 sm:h-120 bg-slate-900/70 rounded-xl overflow-hidden">
-          <img src="img/Elctron-phonon_interact.png"
-               alt="Electron–phonon coupling"
-               class="w-full h-full object-cover" />
+      <div class="border border-slate-800 rounded-2xl p-5 flex flex-col gap-4 bg-slate-900/60">
+        <div class="w-full h-48 rounded-xl overflow-hidden bg-slate-800">
+          <img
+            src="img/Elctron-phonon_interact.png"
+            alt="Electron–phonon coupling"
+            class="w-full h-full object-cover"
+          />
         </div>
         <div>
-          <h3 class="font-semibold text-indigo-200 mb-2">
-            Tunable thermal transport via electron–phonon coupling
+          <h3 class="font-semibold text-indigo-300 mb-2">
+            Tunable Thermal Transport via EPC
           </h3>
           <p class="text-slate-300 mb-2">
-            Enhanced electron–phonon coupling near the Van Hove singularity suppresses lattice
-            thermal conductivity by ~66% and boosts thermoelectric performance.
+            Using first-principles calculations combined with on-the-fly machine-learning force fields,
+            this work demonstrates that electron–phonon coupling (EPC) can dominate heat transport
+            in hole-doped monolayer penta-graphene.
           </p>
-          <ul class="list-disc list-inside text-slate-300">
+          <p class="text-slate-300 mb-2">
+            Enhanced EPC near the Van Hove singularity strongly suppresses lattice thermal conductivity
+            and more than doubles the thermoelectric figure of merit, identifying EPC as a powerful
+            tuning knob in low-symmetry 2D materials.
+          </p>
+          <ul class="list-disc list-inside text-slate-400 text-xs">
             <li>
-              Nguyen Thanh Tien et al.,
-              <strong>PRB</strong> 109, 155416 (2024).
+              EPC-driven thermal engineering in low-symmetry 2D materials
             </li>
           </ul>
         </div>
@@ -399,6 +427,10 @@
     </div>
   </div>
 </section>
+
+</body>
+</html>
+
 
 
     <!-- PUBLICATIONS -->
@@ -709,6 +741,7 @@
   </script>
 </body>
 </html>
+
 
 
 
